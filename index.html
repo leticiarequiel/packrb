@@ -459,9 +459,15 @@ header.site-header img { height: 64px; width: auto; }
       "blue  vlog   mood"
       "blue  green  cozy";
   }
+  .bento-text-card { grid-area: text; }
+  .bento-slot-future { grid-area: future; }
+  .bento-slot-blue { grid-area: blue; }
+  .bento-slot-vlog { grid-area: vlog; }
+  .bento-slot-mood { grid-area: mood; }
+  .bento-slot-green { grid-area: green; }
+  .bento-slot-cozy { grid-area: cozy; }
 }
 .bento-text-card {
-  grid-area: text;
   background: linear-gradient(160deg, var(--c-heading), #2c2622);
   border-radius: 1.5rem;
   padding: 32px;
@@ -1047,32 +1053,32 @@ header.site-header img { height: 64px; width: auto; }
 <div class="bento-text-card">
 <p>São 6 Luts para deixar <strong>seu vídeo pronto!</strong></p>
 </div>
-<div class="bento-tile" style="grid-area: future;">
+<div class="bento-tile bento-slot-future">
 <img class="bento-before" src="assets/img/luts/cinefuture-antes.jpg" alt="Cinefuture antes"/>
 <img class="bento-after" src="assets/img/luts/cinefuture-depois.jpg" alt="Cinefuture depois"/>
 <span class="bento-tag">Cinefuture</span>
 </div>
-<div class="bento-tile" style="grid-area: blue;">
+<div class="bento-tile bento-slot-blue">
 <img class="bento-before" src="assets/img/luts/cinevlog-antes.jpg" alt="Cinevlog antes"/>
 <img class="bento-after" src="assets/img/luts/cinevlog-depois.jpg" alt="Cinevlog depois"/>
 <span class="bento-tag">Cinevlog</span>
 </div>
-<div class="bento-tile" style="grid-area: vlog;">
+<div class="bento-tile bento-slot-vlog">
 <img class="bento-before" src="assets/img/luts/cinemood-antes.jpg" alt="Cinemood antes"/>
 <img class="bento-after" src="assets/img/luts/cinemood-depois.jpg" alt="Cinemood depois"/>
 <span class="bento-tag">Cinemood</span>
 </div>
-<div class="bento-tile" style="grid-area: mood;">
+<div class="bento-tile bento-slot-mood">
 <img class="bento-before" src="assets/img/luts/cineblue-antes.jpg" alt="Cineblue antes"/>
 <img class="bento-after" src="assets/img/luts/cineblue-depois.jpg" alt="Cineblue depois"/>
 <span class="bento-tag">Cineblue</span>
 </div>
-<div class="bento-tile" style="grid-area: green;">
+<div class="bento-tile bento-slot-green">
 <img class="bento-before" src="assets/img/luts/cinegreen-antes.jpg" alt="Cinegreen antes"/>
 <img class="bento-after" src="assets/img/luts/cinegreen-depois.jpg" alt="Cinegreen depois"/>
 <span class="bento-tag">Cinegreen</span>
 </div>
-<div class="bento-tile" style="grid-area: cozy;">
+<div class="bento-tile bento-slot-cozy">
 <img class="bento-before" src="assets/img/luts/cinecozy-antes.jpg" alt="Cinecozy antes"/>
 <img class="bento-after" src="assets/img/luts/cinecozy-depois.jpg" alt="Cinecozy depois"/>
 <span class="bento-tag">Cinecozy</span>
