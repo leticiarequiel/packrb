@@ -1283,7 +1283,17 @@ Falar no WhatsApp
   var iconSvg = '<svg width="20" height="18" viewBox="0 0 33 29" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.88157 5.45502L29.4903 16.0138L28.8355 18.142L7.76963 8.15926C7.28378 7.92903 7.06693 7.35584 7.27872 6.86167L7.88157 5.45502Z" fill="#CBBAB2"/><path d="M5.2623 18.3057L24.1699 4.88204L25.0703 6.68277L7.89096 19.6067C7.50597 19.8963 6.96921 19.8703 6.61407 19.5448L5.2623 18.3057Z" fill="#CBBAB2"/><path d="M24.2518 4.9639L30.0633 17.0779L28.3444 18.5512L22.82 6.9654C22.6077 6.52017 22.7518 5.98665 23.1593 5.70878L24.2518 4.9639Z" fill="#CBBAB2"/><path d="M7.88164 5.45502L3.13426 16.4231L4.77129 17.8964L9.41749 7.46151C9.61728 7.01281 9.46163 6.48544 9.05022 6.21714L7.88164 5.45502Z" fill="#CBBAB2"/><path d="M3.13424 16.4231L16.8034 28.6189L16.8034 25.9178L5.54746 15.6861C5.20177 15.3719 4.68456 15.3389 4.30172 15.6066L3.13424 16.4231Z" fill="#CBBAB2"/><path d="M30.0633 17.0779L16.8034 28.6189L16.8034 25.9178L27.8843 15.9392C28.3282 15.5395 29.0212 15.6156 29.3678 16.102L30.0633 17.0779Z" fill="#CBBAB2"/></svg>';
   var item = '<span class="ticker-item">' + iconSvg + 'Pack de Luts</span>';
   var track = document.getElementById('tickerTrack');
-  track.innerHTML = item.repeat(16);
+
+  function build(){
+    track.innerHTML = item.repeat(2);
+    var itemPitch = track.children[0].getBoundingClientRect().width + 40;
+    var setCount = Math.ceil(window.innerWidth / itemPitch) + 4;
+    var setHTML = item.repeat(setCount);
+    track.innerHTML = setHTML + setHTML;
+  }
+
+  build();
+  window.addEventListener('resize', build);
 })();
 </script>
 
