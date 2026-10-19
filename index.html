@@ -9,50 +9,31 @@
 <meta property="og:locale" content="pt_BR"/>
 <meta property="og:title" content="Pack RB Luts – Cores de Cinema em 1 Clique"/>
 <meta property="og:description" content="Tenha cores de cinema nos seus vídeos com apenas 1 clique. 6 LUTs autorais, conversores profissionais de LOG e curso prático de aplicação."/>
-<meta name="theme-color" content="#494440"/>
-<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml"/>
+<meta name="theme-color" content="#f4efe8"/>
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" href="assets/ds/fonts/Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin/>
+<link rel="preload" href="assets/ds/fonts/Poppins-SemiBold.woff2" as="font" type="font/woff2" crossorigin/>
 
 <style>
-@font-face {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url('assets/fonts/Poppins-Regular.woff2') format('woff2');
-}
-@font-face {
-  font-family: 'Plus Jakarta Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url('assets/fonts/PlusJakartaSans-Regular.woff2') format('woff2');
-}
-@font-face {
-  font-family: 'Plus Jakarta Sans';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url('assets/fonts/PlusJakartaSans-SemiBold.woff2') format('woff2');
-}
-@font-face {
-  font-family: 'Plus Jakarta Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url('assets/fonts/PlusJakartaSans-Bold.woff2') format('woff2');
-}
+@font-face { font-family:'Poppins'; font-style:normal; font-weight:400; font-display:swap; src:url('assets/ds/fonts/Poppins-Regular.woff2') format('woff2'); }
+@font-face { font-family:'Poppins'; font-style:normal; font-weight:500; font-display:swap; src:url('assets/ds/fonts/Poppins-Medium.woff2') format('woff2'); }
+@font-face { font-family:'Poppins'; font-style:normal; font-weight:600; font-display:swap; src:url('assets/ds/fonts/Poppins-SemiBold.woff2') format('woff2'); }
+@font-face { font-family:'Poppins'; font-style:normal; font-weight:700; font-display:swap; src:url('assets/ds/fonts/Poppins-Bold.woff2') format('woff2'); }
+@font-face { font-family:'Merriweather'; font-style:italic; font-weight:400; font-display:swap; src:url('assets/ds/fonts/Merriweather-Italic-Regular.woff2') format('woff2'); }
 
 :root {
-  --c-primary: #2A2A2A;
-  --c-secondary: #8A847D;
-  --c-text: #706047;
-  --c-heading: #494440;
-  --c-desc: #434240;
-  --c-accent: #CBBAB2;
-  --c-accent-2: #D6CDC1;
-  --c-btn-from: #72645E;
-  --c-btn-to: #A0897F;
-  --c-bg: #FAF9F7;
+  --c-primary: #2a2725;
+  --c-secondary: #6b645e;
+  --c-text: #7f6752;
+  --c-heading: #4a4744;
+  --c-desc: #4a4744;
+  --c-accent: #a68c75;
+  --c-accent-2: #d9b99b;
+  --c-btn-from: #4a4744;
+  --c-btn-to: #6b645e;
+  --c-bg: #f4efe8;
 }
 
 * { box-sizing: border-box; }
@@ -99,7 +80,7 @@ header.site-header img { height: 64px; width: auto; }
 }
 @media (min-width: 860px) { .site-nav { display: flex; } }
 .site-nav a {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 0.75rem;
   text-transform: uppercase;
@@ -122,7 +103,7 @@ header.site-header img { height: 64px; width: auto; }
 }
 
 .hero-title {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 2.5rem;
   line-height: 1.15;
@@ -141,7 +122,7 @@ header.site-header img { height: 64px; width: auto; }
 }
 
 .hero-desc {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 1.1rem;
   line-height: 1.5;
@@ -164,7 +145,7 @@ header.site-header img { height: 64px; width: auto; }
 }
 .compat-item svg { color: var(--c-secondary); flex-shrink: 0; }
 .compat-item span {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 0.85rem;
   color: var(--c-desc);
@@ -180,7 +161,7 @@ header.site-header img { height: 64px; width: auto; }
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 0.95rem;
   text-transform: uppercase;
@@ -262,7 +243,7 @@ header.site-header img { height: 64px; width: auto; }
   100% { transform: scale(1.8); opacity: 0; }
 }
 .hero-card-badge span.label {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 10px;
   font-weight: 700;
   text-transform: uppercase;
@@ -274,14 +255,14 @@ header.site-header img { height: 64px; width: auto; }
   padding-top: 14px;
 }
 .hero-card-footer p.name {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 0.95rem;
   color: #fff;
   margin: 0 0 2px;
 }
 .hero-card-footer p.tag {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 10px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -311,7 +292,7 @@ header.site-header img { height: 64px; width: auto; }
   align-items: center;
   gap: 10px;
   flex-shrink: 0;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 0.8rem;
   letter-spacing: 0.14em;
@@ -325,7 +306,7 @@ header.site-header img { height: 64px; width: auto; }
 .section { padding: 88px 0; }
 .section-head { max-width: 640px; margin: 56px auto 40px; text-align: center; }
 .section-title {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 1.9rem;
   line-height: 1.2;
@@ -340,7 +321,7 @@ header.site-header img { height: 64px; width: auto; }
   max-width: 640px;
   margin-left: auto;
   margin-right: auto;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
   color: var(--c-desc);
@@ -365,7 +346,7 @@ header.site-header img { height: 64px; width: auto; }
   border-radius: 999px;
   background: var(--c-heading);
   color: #fff;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 0.85rem;
   margin-bottom: 14px;
@@ -419,7 +400,7 @@ header.site-header img { height: 64px; width: auto; }
   position: absolute;
   left: 10px;
   bottom: 10px;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 0.62rem;
   letter-spacing: 0.08em;
@@ -431,14 +412,14 @@ header.site-header img { height: 64px; width: auto; }
   padding: 5px 11px;
 }
 .step-title {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 1.05rem;
   color: var(--c-primary);
   margin: 0 0 8px;
 }
 .step-text {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 0.92rem;
   line-height: 1.55;
   color: var(--c-secondary);
@@ -476,7 +457,7 @@ header.site-header img { height: 64px; width: auto; }
   min-height: 220px;
 }
 .bento-text-card p {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 1.9rem;
   line-height: 1.25;
@@ -539,7 +520,7 @@ header.site-header img { height: 64px; width: auto; }
   z-index: 2;
   background: rgba(255,255,255,0.92);
   color: var(--c-primary);
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 0.8rem;
   padding: 8px 16px;
@@ -576,7 +557,7 @@ header.site-header img { height: 64px; width: auto; }
   padding: 72px 24px 40px;
 }
 .eco-head h2 {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 1.9rem;
   line-height: 1.2;
@@ -597,7 +578,7 @@ header.site-header img { height: 64px; width: auto; }
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
   color: rgba(255,255,255,0.6);
@@ -636,7 +617,7 @@ header.site-header img { height: 64px; width: auto; }
 }
 .eco-tile.is-highlight .eco-icon { background: rgba(0,0,0,0.12); color: var(--c-primary); }
 .eco-tile h3 {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 1.05rem;
   color: #fff;
@@ -645,7 +626,7 @@ header.site-header img { height: 64px; width: auto; }
 .eco-tile.is-highlight h3 { color: var(--c-primary); }
 .eco-tile h3 span { font-weight: 400; opacity: 0.6; }
 .eco-tile p {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 0.9rem;
   line-height: 1.55;
   color: rgba(255,255,255,0.6);
@@ -670,7 +651,7 @@ header.site-header img { height: 64px; width: auto; }
   display: flex;
   align-items: center;
   gap: 8px;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 0.75rem;
   border-radius: 999px;
@@ -685,7 +666,7 @@ header.site-header img { height: 64px; width: auto; }
 /* ---- preco ---- */
 .price-block { max-width: 560px; margin: 0 auto; text-align: center; }
 .price-kicker {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 0.75rem;
   letter-spacing: 0.2em;
@@ -693,7 +674,7 @@ header.site-header img { height: 64px; width: auto; }
   color: var(--c-secondary);
 }
 .price-strike {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.1rem;
   color: var(--c-secondary);
   text-decoration: line-through;
@@ -707,9 +688,9 @@ header.site-header img { height: 64px; width: auto; }
   gap: 10px;
   margin-top: 6px;
 }
-.price-row .of { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 500; font-size: 1.2rem; color: var(--c-secondary); }
+.price-row .of { font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 1.2rem; color: var(--c-secondary); }
 .price-amount {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 4.2rem;
   letter-spacing: -0.02em;
@@ -720,7 +701,7 @@ header.site-header img { height: 64px; width: auto; }
 }
 @media (min-width: 640px) { .price-amount { font-size: 5rem; } }
 .price-installment {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 0.95rem;
   color: var(--c-secondary);
   margin: 6px 0 36px;
@@ -729,7 +710,7 @@ header.site-header img { height: 64px; width: auto; }
 
 .price-list-wrap { border-top: 1px solid rgba(74,68,64,0.12); padding-top: 32px; margin-bottom: 36px; }
 .price-list-title {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 0.75rem;
   letter-spacing: 0.2em;
@@ -741,7 +722,7 @@ header.site-header img { height: 64px; width: auto; }
 .price-list li { display: flex; align-items: flex-start; gap: 10px; }
 .price-list svg { color: var(--c-accent); flex-shrink: 0; margin-top: 3px; }
 .price-list span {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 0.92rem;
   line-height: 1.5;
@@ -759,7 +740,7 @@ header.site-header img { height: 64px; width: auto; }
   display: flex;
   align-items: center;
   gap: 8px;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 0.82rem;
   color: var(--c-desc);
@@ -770,7 +751,7 @@ header.site-header img { height: 64px; width: auto; }
 }
 .trust-item svg { color: #6b8f71; flex-shrink: 0; }
 .payment-note {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 0.72rem;
   letter-spacing: 0.16em;
@@ -802,7 +783,7 @@ header.site-header img { height: 64px; width: auto; }
 }
 .guarantee-badge svg { color: var(--c-accent); flex-shrink: 0; }
 .guarantee-badge span {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 0.7rem;
   letter-spacing: 0.14em;
@@ -810,7 +791,7 @@ header.site-header img { height: 64px; width: auto; }
   color: #fff;
 }
 .guarantee-title {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 1.5rem;
   line-height: 1.25;
@@ -822,7 +803,7 @@ header.site-header img { height: 64px; width: auto; }
 .guarantee-title .soft { color: rgba(255,255,255,0.5); font-weight: 400; }
 .guarantee-content p.body {
   max-width: 980px;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 0.95rem;
   line-height: 1.65;
   color: rgba(255,255,255,0.65);
@@ -853,7 +834,7 @@ header.site-header img { height: 64px; width: auto; }
 .faq-item summary::-webkit-details-marker { display: none; }
 .faq-item summary:hover { background: var(--c-bg); }
 .faq-item summary .q {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 1rem;
   color: var(--c-primary);
@@ -861,7 +842,7 @@ header.site-header img { height: 64px; width: auto; }
 .faq-item summary svg { color: var(--c-secondary); flex-shrink: 0; transition: transform 0.3s ease; }
 .faq-item[open] summary svg { transform: rotate(180deg); }
 .faq-item .a {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 0.92rem;
   line-height: 1.6;
   color: var(--c-desc);
@@ -881,7 +862,7 @@ header.site-header img { height: 64px; width: auto; }
 @media (min-width: 760px) { .footer-top { grid-template-columns: 1fr 1fr; } }
 .footer-top img { height: 56px; width: auto; }
 .footer-note {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1rem;
   line-height: 1.5;
   color: var(--c-desc);
@@ -899,7 +880,7 @@ header.site-header img { height: 64px; width: auto; }
 }
 @media (min-width: 640px) { .footer-bottom { flex-direction: row; justify-content: space-between; text-align: left; } }
 .footer-bottom p {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 0.82rem;
   color: var(--c-secondary);
   margin: 0;
@@ -919,7 +900,7 @@ header.site-header img { height: 64px; width: auto; }
 }
 @media (min-width: 640px) { .contact-card { padding: 56px 24px; } }
 .contact-card h2 {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 1.4rem;
   color: var(--c-primary);
@@ -928,7 +909,7 @@ header.site-header img { height: 64px; width: auto; }
 }
 @media (min-width: 640px) { .contact-card h2 { font-size: 1.7rem; } }
 .contact-card p {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 0.95rem;
   color: var(--c-desc);
   margin: 0;
@@ -937,7 +918,7 @@ header.site-header img { height: 64px; width: auto; }
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 0.9rem;
   color: #fff;
@@ -950,6 +931,65 @@ header.site-header img { height: 64px; width: auto; }
 }
 .btn-whatsapp:hover { transform: translateY(-2px); box-shadow: 0 18px 28px -10px rgba(37, 211, 102, 0.55); }
 .btn-whatsapp svg { flex-shrink: 0; }
+/* ===== Design System · Rodrigo Baião · camada de acabamento ===== */
+html { background:#f4efe8; }
+body, body.grid-bg { background:transparent !important; background-image:none !important; position:relative; }
+::selection { background:rgba(166,140,117,.35); }
+a:focus-visible, button:focus-visible, summary:focus-visible { outline:2px solid #a68c75; outline-offset:3px; }
+
+/* fundo: quadriculado do MZV (40px, some nas bordas) + brilho dourado */
+body::before { content:""; position:fixed; inset:0; z-index:-1; pointer-events:none; background-size:40px 40px;
+  background-image:linear-gradient(to right, rgba(74,71,68,.06) 1px, transparent 1px), linear-gradient(to bottom, rgba(74,71,68,.06) 1px, transparent 1px);
+  -webkit-mask-image:radial-gradient(ellipse at center,#000 22%,transparent 76%); mask-image:radial-gradient(ellipse at center,#000 22%,transparent 76%); }
+body::after { content:""; position:fixed; z-index:-1; pointer-events:none; top:-220px; left:50%; width:1000px; height:640px; transform:translateX(-50%);
+  background:radial-gradient(closest-side, rgba(217,185,155,.34), rgba(217,185,155,0)); }
+
+/* tipografia: Poppins (mais larga que a Plus Jakarta) e o toque editorial em Merriweather */
+.hero-title { font-size:2.2rem; line-height:1.12; letter-spacing:-.025em; }
+@media (min-width:640px) { .hero-title { font-size:2.8rem; } }
+@media (min-width:960px) { .hero-title { font-size:3.1rem; } }
+.hero-title .accent, .eco-head h2 .accent { font-family:'Merriweather', Georgia, serif; font-style:italic; font-weight:400; font-size:.94em; letter-spacing:-.01em; }
+.section-title, .eco-head h2 { font-size:1.7rem; white-space:normal !important; letter-spacing:-.02em; }
+@media (min-width:960px) { .section-title, .eco-head h2 { font-size:2.2rem; } }
+.guarantee-title { font-size:1.45rem; } @media (min-width:960px) { .guarantee-title { font-size:1.8rem; } }
+.bento-text-card p { font-size:1.5rem; } @media (min-width:960px) { .bento-text-card p { font-size:1.7rem; } }
+.price-amount { font-weight:600; letter-spacing:-.04em; background:linear-gradient(90deg,#7f6752,#a68c75); -webkit-background-clip:text; background-clip:text; }
+
+/* botão principal: grafite metálico com filete de luz; no hover esquenta para o bronze */
+.btn-primary { background-image:linear-gradient(180deg,#5a5551 0%,#4a4744 55%,#35322f 100%); color:#fbf9f6;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.18), 0 1px 2px rgba(0,0,0,.3), 0 18px 34px -14px rgba(74,71,68,.65); }
+.btn-primary:hover { background-image:linear-gradient(180deg,#7a6450 0%,#5e4b3a 55%,#43362b 100%);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.22), 0 1px 2px rgba(0,0,0,.3), 0 24px 40px -12px rgba(166,140,117,.8); }
+
+/* painéis escuros: preto quente do design system */
+.bento-text-card, .eco-card { background:linear-gradient(160deg,#2a2623 0%,#141211 100%); }
+.eco-card { box-shadow:0 2px 4px rgba(0,0,0,.3), 0 40px 80px -30px rgba(20,18,17,.7), inset 0 1px 0 rgba(255,255,255,.06); }
+.eco-glow { background:radial-gradient(ellipse 80% 55% at 50% 0%, rgba(166,140,117,.32), transparent 70%); }
+.eco-tile { background:rgba(244,239,232,.045); border-color:rgba(244,239,232,.10); }
+.eco-tile.is-highlight { background:linear-gradient(160deg,#fdede2 0%,#d9b99b 48%,#a68c75 100%); box-shadow:inset 0 1px 0 rgba(255,255,255,.55), 0 18px 40px -16px rgba(166,140,117,.55); }
+
+/* vidro claro: menu, selos, lista de FAQ */
+.site-nav { background:rgba(251,249,246,.7); border:1px solid transparent;
+  background:linear-gradient(rgba(251,249,246,.74),rgba(251,249,246,.74)) padding-box, linear-gradient(150deg,#fff,rgba(74,71,68,.10) 42%,rgba(166,140,117,.5)) border-box;
+  box-shadow:0 2px 4px rgba(74,71,68,.06), 0 14px 32px -14px rgba(74,71,68,.22); }
+.trust-item { background:rgba(251,249,246,.8); border-color:rgba(166,140,117,.28); }
+.faq-list { background:#fbf9f6; box-shadow:0 0 0 1px rgba(74,71,68,.06), 0 24px 48px -24px rgba(74,71,68,.25); }
+.step-frame, .hero-card { box-shadow:0 0 0 1px rgba(74,71,68,.06), 0 2px 4px rgba(74,71,68,.08), 0 24px 44px -18px rgba(74,71,68,.4); }
+
+@media (prefers-reduced-motion: reduce) { .ticker-track, .eco-marquee-track, .step-num, .step-num::after, .hero-card-badge span.dot::before { animation:none !important; } html { scroll-behavior:auto; } }
+
+/* destaques em dourado (o degradê antigo ia de cinza a bege e ficava apagado) */
+.hero-title .accent { background:linear-gradient(90deg,#8d745e 0%,#b0916f 100%); -webkit-background-clip:text; background-clip:text; }
+.eco-head h2 .accent { background:linear-gradient(90deg,#f3dcc3 0%,#d9b99b 55%,#a68c75 100%); -webkit-background-clip:text; background-clip:text; }
+.eco-pill.is-light { background:linear-gradient(180deg,#fdede2 0%,#d9b99b 55%,#a68c75 100%); box-shadow:inset 0 1px 0 rgba(255,255,255,.5); }
+.step-num.is-last { background:linear-gradient(135deg,#d9b99b,#a68c75); }
+
+/* WhatsApp: verde da plataforma, texto escuro e ícone clássico */
+.btn-whatsapp { color:#08301a !important; background:linear-gradient(180deg,#6cf09a 0%,#25D366 52%,#1aa84f 100%) !important; font-weight:600;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.55), 0 1px 2px rgba(0,0,0,.25), 0 16px 34px -12px rgba(37,211,102,.7) !important; }
+.btn-whatsapp:hover { box-shadow:inset 0 1px 0 rgba(255,255,255,.65), 0 1px 2px rgba(0,0,0,.25), 0 22px 44px -12px rgba(37,211,102,.85) !important; }
+/* palavra secundária dos títulos em Merriweather itálico */
+.section-title .muted { font-family:'Merriweather', Georgia, serif; font-style:italic; font-weight:400; font-size:.94em; color:#8d745e; }
 </style>
 </head>
 <body class="grid-bg">
@@ -1224,7 +1264,7 @@ header.site-header img { height: 64px; width: auto; }
 <h2>Ainda tem dúvida?</h2>
 <p>Entre em contato com nosso suporte, vamos te ajudar.</p>
 <a class="btn-whatsapp" href="https://wa.me/5521989273119" target="_blank" rel="noopener">
-<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 9 0 0 0-7.8 13.4L3 21l4.7-1.2A9 9 0 1 0 12 3z"/><path d="M8.5 9.5c0 3.5 2.5 6 6 6 .8 0 1-.7 1-1.2 0-.3-.1-.5-.4-.6l-1.6-.7c-.2-.1-.5 0-.6.2l-.4.6a4.6 4.6 0 0 1-2.3-2.3l.6-.4c.2-.1.3-.4.2-.6l-.7-1.6c-.1-.3-.3-.4-.6-.4-.5 0-1.2.2-1.2 1z" fill="currentColor" stroke="none"/></svg>
+<svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
 Falar no WhatsApp
 </a>
 </div>
